@@ -14,14 +14,11 @@ const MyStyles = styled.div`
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-interface Props {
-	subtitle: string;
-}
+interface Props {}
 
-const CheckboxExample = ({ subtitle }: Props) => (
+const CheckboxExample = ({  }: Props) => (
 	<MyStyles>
 		<h1>Checkboxes</h1>
-		<h2>{subtitle}</h2>
 		<p>This example demonstrates how to properly create checkboxes with Formik.</p>
 		<Formik
 			initialValues={{
